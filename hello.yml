@@ -1,0 +1,16 @@
+---
+- name: Hello Ansible
+  hosts: localbuntu
+
+  tasks:
+    - name: Timestamp default users home directory hellos.txt
+      shell: date >> hellos.txt
+
+    - shell: /usr/bin/uptime
+      register: result
+    - debug: var=result
+
+    - name: Timestamp root's home directory with sudo
+      shell: cd; date >> hellos_to_root.txt
+      become: yes
+      become_method: sudo

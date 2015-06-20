@@ -14,3 +14,8 @@
 ## testing
 
 	ansible all -i ansible_hosts -m ping
+
+## hello playbook
+
+	ansible-playbook -v hello.yml -i ansible_hosts
+	
