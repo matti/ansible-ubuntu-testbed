@@ -13,6 +13,10 @@
 	echo "\n[appservers]" >> hosts
 	echo "testbed-app         ansible_ssh_port=2210        ansible_ssh_user=vagrant        ansible_ssh_private_key_file=$(pwd)/.vagrant/machines/app/virtualbox/private_key" >> hosts
 
+## reinstall
+
+	vagrant halt
+	vagrant destroy -f
 
 ## setup
 

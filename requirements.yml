@@ -1,8 +1,12 @@
-# from galaxy
 - src: Stouts.timezone
-  version: 2.1.0
   path: roles
+  version: 2.1.0
 
 - src: franklinkim.environment
-  version: 1.0.0
   path: roles
+  version: 1.0.0
+
+- src: https://github.com/matti/ansible-goodstuff
+  path: roles
+  version: 0.0.1
+  name: matti.goodstuff

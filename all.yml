@@ -4,6 +4,7 @@
   roles:
     - Stouts.timezone
     - franklinkim.environment
+    - matti.goodstuff
   vars:
     timezone_timezone: Europe/Helsinki
     #timezone_dependent_services: [rsyslog, apache2, sendmail]
