@@ -1,0 +1,11 @@
+- hosts: all
+  become: yes
+
+  roles:
+    - Stouts.timezone
+    - franklinkim.environment
+  vars:
+    timezone_timezone: Europe/Helsinki
+    #timezone_dependent_services: [rsyslog, apache2, sendmail]
+    environment_config:
+      - { name: LC_ALL, value: en_US.UTF8 }

@@ -1,0 +1,2 @@
+- hosts: proxyservers
+  become: yes
